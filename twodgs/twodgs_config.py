@@ -15,9 +15,6 @@ from nerfstudio.data.datamanagers.full_images_datamanager import FullImageDatama
 
 from twodgs.twodgs import TwodgsModelConfig
 
-"""
-Swap out the network config to use OpenCLIP or CLIP here.
-"""
 twodgs_method = MethodSpecification(
     config=TrainerConfig(
         method_name="2dgs",
