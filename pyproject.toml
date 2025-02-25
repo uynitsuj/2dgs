@@ -1,0 +1,16 @@
+[project]
+name = "twodgs"
+version = "0.0.1"
+
+dependencies=[
+    "nerfstudio==1.1.5",
+    "torch",  # gpu
+    "gsplat==1.4.0",
+]
+
+[tool.setuptools.packages.find]
+include = ["twodgs*"]
+
+
+[project.entry-points.'nerfstudio.method_configs']
+twodgs = 'twodgs.twodgs_config:twodgs_method'

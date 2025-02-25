@@ -1,0 +1,9 @@
+[submodule "dependencies/nerfstudio"]
+	path = dependencies/nerfstudio
+	url = https://github.com/nerfstudio-project/nerfstudio.git
+	branch = 73fe54d
+
+[submodule "dependencies/gsplat"]
+	path = dependencies/gsplat
+	url = https://github.com/nerfstudio-project/gsplat.git
+	branch = bd64a47
