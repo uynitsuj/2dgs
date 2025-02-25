@@ -8,6 +8,7 @@
 <img src="media/3DGSvs2DGSdepth.gif"/>
 <div style="height: 50px;">&nbsp;</div>
 (Left) 3D Gaussian Splatting, (Right) 2D Gaussian Splatting
+<div style="height: 50px;">&nbsp;</div>
 </div>
 
 Tested on Python 3.10, cuda 12.1, using conda. 
