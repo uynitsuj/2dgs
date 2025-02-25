@@ -160,13 +160,13 @@ class TwodgsModelConfig(ModelConfig):
     """Whether to randomize the background color."""
     num_downscales: int = 2
     """at the beginning, resolution is 1/2^d, where d is this number"""
-    cull_alpha_thresh: float = 0.1
+    cull_alpha_thresh: float = 0.05
     """threshold of opacity for culling gaussians. One can set it to a lower value (e.g. 0.005) for higher quality."""
     cull_scale_thresh: float = 0.5
     """threshold of scale for culling huge gaussians"""
     reset_alpha_every: int = 30
     """Every this many refinement steps, reset the alpha"""
-    densify_grad_thresh: float = 0.0008
+    densify_grad_thresh: float = 0.0005
     """threshold of positional gradient norm for densifying gaussians"""
     use_absgrad: bool = True
     """Whether to use absgrad to densify gaussians, if False, will use grad rather than absgrad"""
@@ -222,7 +222,7 @@ class TwodgsModelConfig(ModelConfig):
     """If True, apply color correction to the rendered images before computing the metrics."""
     use_normal_loss: bool = True
     """Enable normal consistency loss. [2DGS experimental]"""
-    normal_lambda: float = 5e-2
+    normal_lambda: float = 8e-2
     """Weight for normal loss"""
     normal_start_iter: int = 5_000
     """Iteration to start normal consistency regulerization"""
