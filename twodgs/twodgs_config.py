@@ -1,6 +1,6 @@
 
 """
-LERF configuration file.
+2DGS configuration file.
 """
 
 from nerfstudio.cameras.camera_optimizers import CameraOptimizerConfig
